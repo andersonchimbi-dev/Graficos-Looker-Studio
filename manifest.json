@@ -8,7 +8,7 @@
   "privacyPolicyUrl": "",
   "termsOfServiceUrl": "",
   "packageUrl": "https://andersonchimbi-dev.github.io/Graficos-Looker-Studio/",
-  "devMode": "true",
+  "devMode": true,
   "components": [
     {
       "id": "quartile-boxplot",
