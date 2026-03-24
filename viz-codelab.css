@@ -1,0 +1,116 @@
+/* ─── Reset ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+body {
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: #3c4043;
+  background: #fff;
+}
+
+/* ─── Contenedor raíz ────────────────────────────────────────────────────────── */
+#container {
+  padding: 12px 16px;
+  width: 100%;
+  min-height: 100%;
+  overflow: auto;
+}
+
+/* ─── Título de la visualización ─────────────────────────────────────────────── */
+.viz-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #202124;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+
+/* ─── Área del gráfico ───────────────────────────────────────────────────────── */
+.chart-area {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ─── Área de la tabla ───────────────────────────────────────────────────────── */
+.table-area {
+  margin-top: 14px;
+}
+
+/* ─── Wrapper de tabla ───────────────────────────────────────────────────────── */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.table-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5f6368;
+  padding: 6px 12px;
+  background: #f1f3f4;
+  border-bottom: 1px solid #dadce0;
+}
+
+/* ─── Tabla de estadísticas ──────────────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+thead th {
+  background: #4285f4;
+  color: #fff;
+  padding: 8px 12px;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tbody td {
+  padding: 6px 12px;
+  text-align: right;
+  border-bottom: 1px solid #e8eaed;
+  white-space: nowrap;
+}
+
+tbody td.col-label {
+  text-align: left;
+  font-weight: 500;
+  color: #202124;
+}
+
+.row-even {
+  background: #fafafa;
+}
+
+.row-odd {
+  background: #fff;
+}
+
+tbody tr:hover td {
+  background: #e8f0fe;
+  transition: background 0.12s ease;
+}
+
+/* ─── Mensaje de sin datos ───────────────────────────────────────────────────── */
+.empty-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: #80868b;
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+}

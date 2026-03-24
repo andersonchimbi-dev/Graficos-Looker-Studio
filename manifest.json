@@ -1,0 +1,25 @@
+{
+  "name": "Boxplot de Cuartiles",
+  "description": "Box-plot con Q1, Mediana y Q3 más tabla de estadísticas. Soporta filtros y agrupación por dimensión.",
+  "organization": "Mi Organización",
+  "organizationUrl": "",
+  "logoUrl": "",
+  "supportUrl": "",
+  "privacyPolicyUrl": "",
+  "termsOfServiceUrl": "",
+  "packageUrl": "gs://YOUR_BUCKET_NAME",
+  "devMode": "true",
+  "components": [
+    {
+      "id": "quartile-boxplot",
+      "name": "Boxplot de Cuartiles",
+      "description": "Visualización de cuartiles (Q1, Q2, Q3) con gráfico boxplot SVG y tabla estadística completa.",
+      "iconUrl": "",
+      "resource": {
+        "js": "viz-codelab.js",
+        "config": "viz-codelab.json",
+        "css": "viz-codelab.css"
+      }
+    }
+  ]
+}

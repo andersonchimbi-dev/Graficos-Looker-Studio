@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "node -e \"require('fs').copyFileSync('viz-codelab-src.js','viz-codelab.js')\"",
+    "watch": "node -e \"const fs=require('fs');fs.copyFileSync('viz-codelab-src.js','viz-codelab.js');fs.watch('viz-codelab-src.js',()=>fs.copyFileSync('viz-codelab-src.js','viz-codelab.js'))\""
+  },
+  "dependencies": {
+    "@google/dscc": "^0.3.22"
+  }
+}
