@@ -7,7 +7,7 @@
   "supportUrl": "",
   "privacyPolicyUrl": "",
   "termsOfServiceUrl": "",
-  "packageUrl": "gs://YOUR_BUCKET_NAME",
+  "packageUrl": "https://andersonchimbi-dev.github.io/Graficos-Looker-Studio/",
   "devMode": "true",
   "components": [
     {
