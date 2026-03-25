@@ -246,9 +246,9 @@ function drawViz(data) {
     return;
   }
 
-  // Los IDs "metrica" y "dimension" deben coincidir con viz-codelab.json
-  var metricFields = data.fields['metrica'];
-  var dimFields    = data.fields['dimension'];
+  // Los IDs deben coincidir con viz-codelab.json
+  var metricFields = data.fields['tableMetric'];
+  var dimFields    = data.fields['tableDimension'];
 
   if (!metricFields || metricFields.length === 0) {
     var noMetric = document.createElement('div');
@@ -266,8 +266,8 @@ function drawViz(data) {
   if (dimName) {
     var map = {};
     rows.forEach(function(row) {
-      var key = String(row['dimension'] !== null && row['dimension'] !== undefined ? row['dimension'] : 'Sin valor');
-      var val = parseFloat(row['metrica']);
+      var key = String(row['tableDimension'] !== null && row['tableDimension'] !== undefined ? row['tableDimension'] : 'Sin valor');
+      var val = parseFloat(row['tableMetric']);
       if (!isNaN(val)) {
         if (!map[key]) map[key] = [];
         map[key].push(val);
@@ -277,7 +277,7 @@ function drawViz(data) {
       .sort(function(a, b) { return a.localeCompare(b, 'es'); })
       .map(function(name) { return { name: name, stats: calculateQuartiles(map[name]) }; });
   } else {
-    var values = rows.map(function(row) { return parseFloat(row['metrica']); }).filter(function(v) { return !isNaN(v); });
+    var values = rows.map(function(row) { return parseFloat(row['tableMetric']); }).filter(function(v) { return !isNaN(v); });
     groups = [{ name: metricName, stats: calculateQuartiles(values) }];
   }
 

@@ -1,25 +1,25 @@
 {
-  "name": "Boxplot de Cuartiles",
-  "description": "Box-plot con Q1, Mediana y Q3 más tabla de estadísticas. Soporta filtros y agrupación por dimensión.",
-  "organization": "Mi Organización",
-  "organizationUrl": "",
-  "logoUrl": "",
-  "supportUrl": "",
-  "privacyPolicyUrl": "",
-  "termsOfServiceUrl": "",
-  "packageUrl": "https://andersonchimbi-dev.github.io/Graficos-Looker-Studio/",
-  "devMode": true,
-  "components": [
-    {
-      "id": "quartile-boxplot",
-      "name": "Boxplot de Cuartiles",
-      "description": "Visualización de cuartiles (Q1, Q2, Q3) con gráfico boxplot SVG y tabla estadística completa.",
-      "iconUrl": "",
-      "resource": {
-        "js": "viz-codelab.js",
-        "config": "viz-codelab.json",
-        "css": "viz-codelab.css"
-      }
-    }
-  ]
+    "name": "Community Visualization",
+    "logoUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/table-chart.png",
+    "organization": "Looker Studio Codelab",
+    "organizationUrl": "https://url",
+    "termsOfServiceUrl": "https://url",
+    "supportUrl": "https://url",
+    "packageUrl": "https://url",
+    "privacyPolicyUrl": "https://url",
+    "description": "Community Visualization Codelab",
+    "devMode": true,
+    "components": [
+        {
+            "id": "tableChart",
+            "name": "Table",
+            "iconUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/table-chart.png",
+            "description": "A simple table chart.",
+            "resource": {
+                "js": "gs://looker-studio-graficos/cuartiles/viz-codelab.js",
+                "config": "gs://looker-studio-graficos/cuartiles/viz-codelab.json",
+                "css": "gs://looker-studio-graficos/cuartiles/viz-codelab.css"
+            }
+        }
+    ]
 }
